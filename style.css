@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(172, 187, 201);
+}
+
+/*---------------------- NAVBAR------------------------- */
+.nav {
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+
+}
+.nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Belanosima', sans-serif;
+}
+
+/* -------------------STOPWATCH styled here-------------------- */
+.container {
+    height: 90vh;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.containerBox {
+    padding: 2rem 4rem;
+    border-radius: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(images/b3.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+.containerBox span {
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+    margin-left: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#miliSecond {
+    font-size: 30px;
+    margin-left: 0px;
+}
+/*------- all buttons styled here ------*/
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.buttons img {
+    cursor: pointer;
+    height: 50px;
+}
+.buttons img:nth-child(2n) {
+    height: 70px;
+}
+
+/* -----------------adding media query  for small devices-------------*/
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        padding: 15px;
+    }
+    .nav a {
+        font-size: 2rem;
+    }
+    .times span{
+           font-size: 2.4rem;
+    }
+    .containerBox {
+        padding: 2rem 20px;
+    }
+    #miliSecond {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
