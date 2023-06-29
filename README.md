@@ -10,7 +10,7 @@ This is a simple stopwatch application implemented using vanilla JavaScript.
 
 ## Demo
 
-A live demo of the Stopwatch App can be accessed [here](https://your-demo-link.com).
+A live demo of the Stopwatch App can be accessed [here](https://stopwatchashwani.netlify.app/).
 
 ## Getting Started
 
